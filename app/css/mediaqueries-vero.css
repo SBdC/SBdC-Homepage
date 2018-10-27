@@ -1,0 +1,178 @@
+@media screen and  (max-width: 600px) {
+  .logo {
+    margin-top: 80px;
+    width: 120px;
+    position: absolute;
+  }
+  .vero{
+    margin-right: 10px;
+
+  }
+  .sara{
+      margin-left: 10px;
+    }
+
+  .wrapper {
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+  }
+  .left {
+    width: 20%;
+
+  }
+  .bottomLeft {
+    width: 50%;
+  }
+  .bottomLeft2 {
+    width: 80%;
+  }
+  .right {
+    width: 20%;
+  }
+  .bottomRight {
+    width: 50%;
+  }
+  .bottomRight2 {
+    width: 80%;
+  }
+  .title {
+ margin:20px;
+
+  }
+  .about h2 {
+    font-size: 1.5em;
+
+  }
+  li a {
+    font-size: 0.8em;
+    margin-top: -60px;
+  }
+  nav {
+   padding-top: -10px;
+   padding-bottom: 10px;
+    margin-bottom: 130px;
+    background-color: black;
+
+  }
+  .title h1 {
+    margin-bottom: 140px;
+    font-size: 1.5em;
+    position: absolute;
+    padding:0;
+
+  }
+   .title h3 {
+    text-align: center;
+    font-size: 0.8em;
+    margin:0 auto;
+
+
+  }
+
+  .titleSection {
+    margin-top: 60px;
+    font-size: 1.2em;
+
+  }
+  .cards {
+    display: block;
+  }
+
+
+  .about {
+    height: 420px;
+
+  }
+  .vero {
+    height: 440px;
+  }
+  .about p {
+    line-height: 1.5em;
+    padding: 0px 15px 0px 15px;
+    font-size: 0.8em;
+
+
+      margin-right: 40px;
+      margin-left: 40px;
+
+  }
+  .about h2 {
+
+    padding-bottom: 40px;
+
+  }
+
+
+
+  .card-content {
+    text-align: center;
+  }
+  .card-content h2 {
+    font-size: 1em;
+  }
+  .card-content p {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width:1024px) {
+  .left {
+    width: 25%;
+  }
+  .bottomLeft {
+    width: 40%;
+  }
+  .bottomLeft2 {
+    width: 55%;
+  }
+
+  .right {
+    width: 25%;
+  }
+  .bottomRight {
+    width: 40%;
+  }
+  .bottomRight2 {
+    width: 55%;
+  }
+
+  .logo {
+    margin-top: 40px ;
+    width: 150px;
+  }
+
+  .vero {
+
+    top: 58px;
+
+
+  }
+  h1 {
+    font-size: 2em;
+    margin-top: -15px;
+    margin-right: 15px;
+  }
+  h3 {
+
+  }
+  li a {
+    font-size: 1.5em;
+  }
+  nav {
+    height: 60px;
+  }
+  .card {
+    flex: 0 1 calc(50% - 1em);
+
+  }
+
+    .about {
+      height: 500px;
+
+    }
+
+  #copyright p {
+    padding-left: 20px;
+  }
+}
