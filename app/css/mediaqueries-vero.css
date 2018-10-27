@@ -1,16 +1,27 @@
-@media screen and  (max-width: 600px) {
-  .logo {
-    margin-top: 80px;
-    width: 120px;
-    position: absolute;
+@media screen and  (max-width: 649px) {
+  
+   .logo {
+    margin-top: 120px ;
+   
   }
-  .vero{
-    margin-right: 10px;
+.vero {
+    transform: scale(1.4);
+    
+  }
 
+.sara {
+    transform: scale(1.4);
+    top:20px;
   }
-  .sara{
-      margin-left: 10px;
-    }
+
+  #Lisbon-Boutique{
+    display:none;
+  }
+
+
+#Sara-Bento-de-Castro{
+    display:none;
+  }
 
   .wrapper {
     margin-top: 30px;
@@ -116,7 +127,7 @@
   }
 }
 
-@media screen and (min-width: 601px) and (max-width:1024px) {
+@media screen and (min-width: 650px) and (max-width:1110px) {
   .left {
     width: 25%;
   }
@@ -138,16 +149,31 @@
   }
 
   .logo {
-    margin-top: 40px ;
-    width: 150px;
+    margin-top: 35px ;
+   
+  }
+.vero {
+    transform: scale(1.4);
+    
   }
 
-  .vero {
-
-    top: 58px;
-
-
+.sara {
+    transform: scale(1.4);
+   
   }
+
+  #Lisbon-Boutique{
+    display:none;
+  }
+
+
+#Sara-Bento-de-Castro{
+    display:none;
+  }
+
+
+
+
   h1 {
     font-size: 2em;
     margin-top: -15px;

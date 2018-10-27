@@ -9,31 +9,44 @@ copy.innerHTML = "<p> Sara Bento de Castro &copy; " + year + " All rights reserv
 
 
 
+const details = [{
+    name: "bege-square",
+    source: "app/images/eco-bones1x.png"
+  },
+  {
+    name: "green-square",
+    source: "app/images/geom-pattern.jpg"
+  },
+  
+];
+
+
 const cards = document.querySelectorAll(".card");
+const foillard = document.getElementById('foillards')
 const images = document.querySelectorAll("img");
 const picContainer = document.querySelectorAll(".thumbnail");
 
 
-function toggleOpen (){
-  this.classList.toggle('open');
-  console.log(images);
-}
+function toggleOpen (e){
 
-function toggleBig (){
+  foillard.innerHTML='';
+  e.preventDefault();
+  console.log(e.target.id);
+  for (let detail in details) {
+
+  	if (e.target.id === details[detail].name) {
+  	const div = document.createElement("div");
+    div.className = "product-detail";
+    div.innerHTML = `<h3>${details[detail].name}</h3><img class="detail-image" src="${details[detail].source}">`
 
 
-
-}
-
-
-function toggleActive (e){
-  console.log(e.propertyName)
-  if (e.propertyName.includes('flex'))
-  {
-    this.classList.toggle('open-active');
+  foillard.appendChild(div);
+  }
+ 
   }
 }
 
-// cards.forEach(card => card.addEventListener('click',toggleOpen));
-images.forEach(image => image.addEventListener('click',toggleBig));
-// panels.forEach(panel => panel.addEventListener('transitionend',toggleActive));
+
+
+cards.forEach(card => card.addEventListener('click',toggleOpen, false));
+
