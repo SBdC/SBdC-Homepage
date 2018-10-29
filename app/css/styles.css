@@ -1,318 +1,230 @@
-
-
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
-
-    margin: 0 auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-
-
 
 h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 6em;
-    margin: auto;
-    color: #0098ff;
-    font-weight: 700;
-    cursor: pointer;
-
+  font-family: 'Open Sans', sans-serif;
+  font-size: 6em;
+  margin: 0;
+  color: #0098ff;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-
 h2:hover {
-    color: #83a8dc;
-
+  color: #83a8dc;
 }
 
 h3 {
-    font-size: 3em;
-    color: whitesmoke;
-    margin: auto;
-    font-family: 'Merriweather', Georgia, serif;
-    font-weight: 300;
-    font-style: italic;
-
+  font-size: 3em;
+  color: whitesmoke;
+  margin: 0;
+  font-family: 'Merriweather', Georgia, serif;
+  font-weight: 300;
+  font-style: italic;
 }
-
 
 a {
-
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
-
 
 p {
-
-    font-size: 0.8em;
-    padding-right: 1em;
+  font-size: 0.8em;
+  padding-right: 1em;
 }
-
 
 .content-wrap {
-    margin: 0 auto;
-    padding-right: 3em;
-    padding-top: 300px;
-    text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 200px;
+  padding-right: 50px;
 }
 
+}
 
-
-
--------------------------*/
 /* Header and Footer
 -------------------------*/
 
-header,
-footer {
-    background: #2B2D42;
-    color: #8D99AE;
+header, footer {
+  background: #2B2D42;
+  color: #8D99AE;
 }
 
 /* header */
 
 header {
-
-    position: relative;
-
+  position: relative;
 }
-
 
 /* footer */
 
 footer {
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    background: url(../images/geom-pattern.jpg) repeat fixed;
-    background-position: center;
-
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  background: url(../images/geom-pattern.jpg) repeat fixed;
+  background-position: center;
 }
-
 
 .contact-info a {
-    padding: 0.4em;
-    font-family: 'Open Sans', sans-serif;
-    color: #0098ff;
-    font-size: 2em;
-    font-weight: 700;
-    background-color: white;
-    margin: 1em;
-    margin-bottom: 2em;
-
+  padding: 0.4em;
+  font-family: 'Open Sans', sans-serif;
+  color: #0098ff;
+  font-size: 2em;
+  font-weight: 700;
+  background-color: white;
+  margin: 1em;
+  margin-bottom: 2em;
 }
-
 
 .contact-info a:hover {
-    color: #83a8dc;
-
+  color: #83a8dc;
 }
-
 
 /* Navigation
 -------------------------*/
 
 nav {
-    text-align: left;
-    position: fixed;
-    padding: 1em;
-    top: 0;
-    width: 100%;
-    /*z-index: 100;*/
+  text-align: left;
+  position: fixed;
+  padding: 1em;
+  top: 0;
+  width: 100%;
+  /*z-index: 100;*/
 }
 
 nav a {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 20px;
-}
-
-.sara:hover {
-    transform: rotate(360deg);
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-    transform-origin:center top ;
-
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 20px;
 }
 
 .logo {
-  margin-top:30px;
+  margin-top: 30px;
   position: absolute;
-  display: inline-block;
-}
-
-.sara {
   width: 20%;
-  top: 30px;
-  
 }
 
-
-
-
-.panel{
-
-    height: 90vh;
-    background-position: bottom;
-    background-size: cover;
+.panel {
+  height: 90vh;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: repeat;
 }
-
-
-
 
 /* vero
 -------------------------*/
 
 .veronique {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-    url(../images/Veronique.jpg) repeat fixed;
-
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/veronique.jpg) fixed;
 }
-
-
 
 /* franzius
 -------------------------*/
 
 .franzius {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-    url(../images/franzius_sbdc2.jpg) repeat fixed;
-
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/franzius.jpg) fixed;
 }
 
 /* wolfen
 -------------------------*/
 
 .wolfen {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-    url(../images/wolfen_sbdc.jpg)repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../images/wolfen.jpg)repeat fixed;
 }
-
 
 /* linda
 -------------------------*/
 
 .linda {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), linear-gradient(rgba(141, 153, 174, 0.3), rgba(141, 153, 174, 0)),
-    url(../images/linda-gris-neutre.jpg)repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), linear-gradient(rgba(141, 153, 174, 0.3), rgba(141, 153, 174, 0)), url(../images/linda-gris-neutre.jpg)repeat fixed;
 }
 
 .linda h2 {
-    font-size: 5em;
+  font-size: 5em;
 }
 
 #gris2 h2 {
-    font-size: 5em;
+  font-size: 5em;
 }
 
 #gris1 h2 {
-    font-size: 5em;
+  font-size: 5em;
 }
-
-
 
 /* grisneutre 01
 -------------------------*/
 
 .gris1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-    url(../images/grisneutre001.jpg)repeat fixed;
-   
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../images/grisneutre001.jpg)repeat fixed;
 }
 
 /* grisneutre 02
 -------------------------*/
 
 .gris2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-    url(../images/grisneutre002.jpg)repeat fixed;
-
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../images/grisneutre002.jpg)repeat fixed;
 }
-
-
-
-
-
-
 
 /* Media Queries
 -------------------------*/
 
 @media only screen and (max-width: 791px) {
-
-    .panel{
-
+  .panel {
     height: 90vh;
     background-position: bottom;
-    background-size: cover 50%;
+    background-size: cover;
+  }
+  #linda h2 {
+    font-size: 2em;
+  }
+  #gris2 h2 {
+    font-size: 2em;
+  }
+  #gris1 h2 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 2em;
+    margin: auto;
+    color: #0098ff;
+  }
+  h3 {
+    font-size: 1.5em;
+    color: whitesmoke;
+    margin: auto;
+    font-family: 'Merriweather', Georgia, serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .contact-info a {
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    margin-right: 0.2em;
+  }
+  nav img {
+    width: 60%;
+  }
+  .content-wrap {
+    padding: 1em;
+    padding-top: 250px;
+    padding-right: 20px;
+  }
+  p {
+    font-size: 0.4em;
+  }
 }
-
-
-    #linda h2 {
-        font-size: 2em;
-    }
-    #gris2 h2 {
-        font-size: 2em;
-    }
-    #gris1 h2 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 2em;
-        margin: auto;
-        color: #0098ff;
-    }
-
-    h3 {
-        font-size: 1.5em;
-        color: whitesmoke;
-        margin: auto;
-        font-family: 'Merriweather', Georgia, serif;
-        font-weight: 300;
-        font-style: italic;
-    }
-
-
-    .contact-info a {
-        padding: 10px;
-        font-size: 1em;
-        font-weight: 600;
-        margin-right: 0.2em;
-    }
-
-
-
-    nav img {
-        width: 60%;
-    }
-
-
-    .content-wrap {
-
-        padding: 1em;
-        padding-top: 250px;
-        padding-right: 20px;
-
-    }
-    p {
-
-
-        font-size: 0.4em;
-
-    }
-
-
-    }
-
-    
