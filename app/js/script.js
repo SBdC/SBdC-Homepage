@@ -18,7 +18,7 @@ const details = [{
 ];
 
 
-const cards = document.querySelectorAll(".card");
+
 const headings = document.getElementsByTagName("h2");
 const panels = document.querySelectorAll(".panel");
 const foillard = document.getElementById('foillards')
@@ -52,17 +52,24 @@ function toggleOpen(e) {
 
 
 
+
 for (let i in headings) {
 
   headings[i].onmouseover = function(e) {
     for (let panel in panels) {
 
       let hoverEl = e.target.getAttribute("data-type");
+      let hoverElTarget = e.target;
 
       if (hoverEl === panels[panel].id) {
         console.log("hello" + panels[panel].id);
+
         let panelo = document.getElementById(panels[panel].id)
-        panelo.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(app/images/${panels[panel].id}.jpg) `
+        panelo.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(app/images/${panels[panel].id}.jpg)`;
+        panelo.style.backgroundSize = "30%";
+
+        hoverElTarget.classList.toggle("heartbeat");
+
       }
 
     }
@@ -72,20 +79,18 @@ for (let i in headings) {
     for (let panel in panels) {
 
       let hoverEl = e.target.getAttribute("data-type");
-      console.log(hoverEl)
+      let hoverElTarget = e.target;
 
       if (hoverEl === panels[panel].id) {
         console.log("goodbye" + panels[panel].id);
         let panelo = document.getElementById(panels[panel].id)
-        panelo.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(app/images/${panels[panel].id}.jpg) `
+        panelo.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(app/images/${panels[panel].id}.jpg) `;
+        panelo.style.backgroundSize = "60%";
+
+        hoverElTarget.classList.toggle("heartbeat");
       }
 
     }
   }
 
 }
-
-
-
-
-cards.forEach(card => card.addEventListener('click', toggleOpen, false));
