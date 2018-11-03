@@ -190,6 +190,7 @@
     height: 60px;
   }
   .card {
+
     flex: 0 1 calc(50% - 1em);
 
   }

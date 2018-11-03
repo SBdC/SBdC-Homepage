@@ -51,59 +51,91 @@ const panels = document.querySelectorAll(".panel");
 
 const echarpe = document.getElementById('echarpe');
 const foillard = document.getElementById('foillard');
+const cardContent = document.getElementById('card-content');
 
 const headingsTwos = document.querySelectorAll("h2");
+
+const cardWraps = document.querySelectorAll(".cardwrap");
 
 const cards = document.querySelectorAll(".card");
 
 
 function toggleOpen(e) {
-  echarpe.innerHTML = '';
-  foillard.innerHTML = '';
+
   e.preventDefault();
-  console.log(e.target.id);
+  emptyDetail();
+
   let typeEl = e.target.getAttribute("data-type");
-   console.log(typeEl);
+
+  
+   
+
+ 
+
 
   for (let detail in details) {
 
+
+
+
+
     if (e.target.id === details[detail].name) {
-      const div = document.createElement("div");
-      div.className = "product-detail";
-      div.id = "product-detail";
-      div.innerHTML = ` 
-         <div class="caption">
-            <p> ${details[detail].material} </p>
-            <p> ${details[detail].size} </p>
-            <p> Digitally printed in the Netherlands</p>
-            <p> Sewn in ${details[detail].production}</p>
-        </div>
-   <picture class="detail-images">
-        <img class="img-detail-product" src="app/images/new/${details[detail].sourceDetail}.jpg" srcset="app/images/new/${details[detail].sourceDetail2}.jpg 2x, app/images/new/${details[detail].sourceDetail}.jpg 1x" alt="narciso eco scarf rectangular">
-  </picture>
-  <picture class="detail-images">
-       <img class="img-model-product" src="app/images/new/${details[detail].sourceModel}.jpg" srcset="app/images/new/${details[detail].sourceModel2}.jpg 2x, app/images/new/${details[detail].sourceModel}.jpg 1x" alt="narciso eco scarf rectangular">
-   </picture>
-    <picture class="detail-images">
-          <img class="img-echarpe-product" src="app/images/new/${details[detail].sourceProduct}.jpg" srcset="app/images/new/${details[detail].sourceProduct2}.jpg 2x, app/images/new/${details[detail].sourceProduct}.jpg 1x" alt="narciso eco scarf rectangular">
-   </picture>
-
-             `
 
 
-            ;
+      wTile = event.target.parentNode;
+       parentwTile = wTile.parentNode;
+       parentwTile.classList.add("border");
+
+
+      const detailPics = document.createElement("div");
      
+      detailPics.innerHTML = ` 
+    
+<div class="detail-container">
+   <div class="caption-wrapper">
+       <div class="caption">
+            <p> Material: ${details[detail].material} </p>
+            <p> Size: ${details[detail].size} </p>
+            <p> Digitally printed in the Netherlands and sewn in ${details[detail].production}</p>
+        </div>
+   </div> 
+
+   <div class="details">
+
+
+      <div class="detail"> 
+       <picture class=" detail-images">
+            <img class="img-detail-product" src="app/images/new/${details[detail].sourceDetail}.jpg" srcset="app/images/new/${details[detail].sourceDetail2}.jpg 2x, app/images/new/${details[detail].sourceDetail}.jpg 1x" alt="narciso eco scarf rectangular">
+      </picture>
+      </div>
+  
+      <div class="detail"> 
+        <picture class="detail-images">
+           <img class="img-model-product" src="app/images/new/${details[detail].sourceModel}.jpg" srcset="app/images/new/${details[detail].sourceModel2}.jpg 2x, app/images/new/${details[detail].sourceModel}.jpg 1x" alt="narciso eco scarf rectangular">
+       </picture>
+      </div>
+
+       <div class="detail"> 
+       <picture class="detail-images">
+              <img class="img-echarpe-product" src="app/images/new/${details[detail].sourceProduct}.jpg" srcset="app/images/new/${details[detail].sourceProduct2}.jpg 2x, app/images/new/${details[detail].sourceProduct}.jpg 1x" alt="narciso eco scarf rectangular">
+       </picture>
+       </div>
+    
+    </div>
+   </div> `
+
+
+
+
       if ((typeEl === details[detail].type) ){
         console.log("yo");
         let sectionToAppend = document.getElementById(typeEl);
         console.log(typeEl, sectionToAppend);
-        sectionToAppend.appendChild(div);
+        sectionToAppend.appendChild(detailPics);
         sectionToAppend.scrollIntoView({block: "nearest"});
 
       }
 
-      // 
-      // 
 
     }
 
@@ -158,12 +190,19 @@ function lightsOff(e){
 }
 
 
+function emptyDetail(){
 
+  echarpe.innerHTML = '';
+  foillard.innerHTML = '';
+
+  cardWraps.forEach(cardWrap => cardWrap.classList.remove("border"));
+}
 
 
 headingsTwos.forEach(headingTwo => headingTwo.addEventListener("mouseover", lightsOn, false));
 headingsTwos.forEach(headingTwo => headingTwo.addEventListener("mouseout", lightsOff, false));
 cards.forEach(card => card.addEventListener('click',toggleOpen, false));
+
 
 
 
