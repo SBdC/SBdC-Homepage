@@ -6,7 +6,7 @@
   }
 .vero {
     transform: scale(1.4);
-
+     height: 440px;
   }
 
 .sara {
@@ -94,9 +94,7 @@
     height: 420px;
 
   }
-  .vero {
-    height: 440px;
-  }
+
   .about p {
     line-height: 1.5em;
     padding: 0px 15px 0px 15px;
@@ -153,7 +151,8 @@
   }
 .vero {
     transform: scale(1.4);
-    right: -40px;
+
+
 
   }
 
@@ -171,6 +170,7 @@
 #Sara-Bento-de-Castro{
     display:none;
   }
+
 
 
 

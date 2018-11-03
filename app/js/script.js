@@ -7,42 +7,75 @@ copy.innerHTML = "<p> Sara Bento de Castro &copy; " + year + " All rights reserv
 
 
 const details = [{
+    type: "foillard",
     name: "bege-square",
-    source: "app/images/eco-bones1x.png"
+    source: "app/images/eco-bones1x.png",
+    material: '100% Silk Twill',
+    size: '160cm x 38cm',
+    production: 'Portugal'
   },
   {
+    type: "foillard",
     name: "green-square",
-    source: "app/images/geom-pattern.jpg"
+    source: "app/images/geom-pattern.jpg",
+    material: '100% Silk Twil',
+    size: '160cm x 38cm',
+    production: 'Portugal'
   },
+  ,
+  { type: "echarpe",
+    name: "bege-rect",
+    source: "app/images/model_green_sq1x.jpg",
+    material: '100% Silk Twil',
+    size: '160cm x 38cm',
+    production: 'Portugal'
+  }
 
 ];
 
 
 
-const headings = document.getElementsByTagName("h2");
 const panels = document.querySelectorAll(".panel");
-const foillard = document.getElementById('foillards')
-const images = document.querySelectorAll("img");
-const picContainer = document.querySelectorAll(".thumbnail");
+
+const echarpe = document.getElementById('echarpe');
+const foillard = document.getElementById('foillard');
+
+const headingsTwos = document.querySelectorAll("h2");
+
+const cards = document.querySelectorAll(".card");
 
 
 function toggleOpen(e) {
-
+  echarpe.innerHTML = '';
   foillard.innerHTML = '';
   e.preventDefault();
   console.log(e.target.id);
+  let typeEl = e.target.getAttribute("data-type");
+   console.log(typeEl);
+
   for (let detail in details) {
 
     if (e.target.id === details[detail].name) {
       const div = document.createElement("div");
       div.className = "product-detail";
       div.id = "product-detail";
-      const divDetail = document.getElementById('product-detail');
-      console.log(divDetail)
-      div.innerHTML = `<h3>${details[detail].name}</h3><img class="detail-image" src="${details[detail].source}">`
+      div.innerHTML = `<img class="detail-image" src="${details[detail].source}"> 
+            <p> ${details[detail].material} </p>
+            <p> ${details[detail].size} </p>
+            <p> Digitally printed in the Netherlands</p>
+            <p> Sewn in ${details[detail].production}</p>`;
+     
+      if ((typeEl === details[detail].type) ){
+        console.log("yo");
+        let sectionToAppend = document.getElementById(typeEl);
+        console.log(typeEl, sectionToAppend);
+        sectionToAppend.appendChild(div);
+        sectionToAppend.scrollIntoView({block: "nearest"});
 
+      }
 
-      foillard.appendChild(div);
+      // 
+      // 
 
     }
 
@@ -53,10 +86,9 @@ function toggleOpen(e) {
 
 
 
-for (let i in headings) {
-
-  headings[i].onmouseover = function(e) {
-    for (let panel in panels) {
+function lightsOn(e){
+  console.log("on");
+  for (let panel in panels) {
 
       let hoverEl = e.target.getAttribute("data-type");
       let hoverElTarget = e.target;
@@ -73,10 +105,12 @@ for (let i in headings) {
       }
 
     }
-  }
 
-  headings[i].onmouseout = function(e) {
-    for (let panel in panels) {
+}
+
+function lightsOff(e){
+  console.log("off");
+  for (let panel in panels) {
 
       let hoverEl = e.target.getAttribute("data-type");
       let hoverElTarget = e.target;
@@ -88,9 +122,20 @@ for (let i in headings) {
         panelo.style.backgroundSize = "60%";
 
         hoverElTarget.classList.toggle("heartbeat");
+
       }
 
     }
-  }
 
 }
+
+
+
+
+
+headingsTwos.forEach(headingTwo => headingTwo.addEventListener("mouseover", lightsOn, false));
+headingsTwos.forEach(headingTwo => headingTwo.addEventListener("mouseout", lightsOff, false));
+cards.forEach(card => card.addEventListener('click',toggleOpen, false));
+
+
+

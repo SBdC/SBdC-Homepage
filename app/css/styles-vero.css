@@ -209,7 +209,7 @@ ul {
 }
 
 body {
-  background-color: var(--yellowGrey);
+  background-color: lightgrey;
 }
 
 /*header*/
@@ -227,8 +227,10 @@ body {
   fill: black;
   top: 109px;
   transform: scale(1.5);
+  right: 0%;
   width: 250px;
   position: absolute;
+ 
 }
 
 /*css illustration top*/
@@ -360,15 +362,6 @@ li:hover {
   color: var(--coral);
 }
 
-.title {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
 .dropWrapper {
   position: absolute;
@@ -409,8 +402,9 @@ li:hover {
 
 /*general text style*/
 
-h1 {
-  font-size: 2.5em;
+.title h1 {
+  font-size: 1.6em;
+
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
@@ -422,6 +416,8 @@ h1 {
   /* -webkit-text-stroke: 2px black; */
 }
 
+
+
 h3 {
   font-size: 1em;
   text-align: right;
@@ -431,7 +427,7 @@ h3 {
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
-  color: var(--grey);
+  color: var(--offwhite);
 }
 
 a {
@@ -443,18 +439,52 @@ a:hover {
   color: var(--coral);
 }
 
-svg:hover #SBdC_logo {
-  fill: var(--blue);
+h2.products{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 80px;
+  background-color: white;
 }
 
-svg:hover #veronique {
-  fill: var(--blue);
+h5{
+  font-size:0.8em;
+  line-height: 20px;
+  padding:10px;
+  margin-top: -10px;
 }
+.titleWrapper {
+ position:flex;
+ width:100%;
+  height:50px;
+
+
+  
+}
+
+
+.title {
+ 
+  
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+
+  
+ 
+}
+
+
+
 
 .centered {
   margin: 0 auto;
   padding-top: 60px;
+  background-color: lightgrey;
 }
+
 
 .cards {
   margin-left: 40px;
@@ -557,12 +587,14 @@ svg:hover #veronique {
 
 .product-detail {
   height: 800px;
-  background-color: red;
   display: block;
+  padding:100px;
+  background-color:white;
+  margin-bottom: 50px;
 }
 
 .detail-image {
-  max-width: 100px;
+  max-width: 500px;
 }
 
 /*animation/
