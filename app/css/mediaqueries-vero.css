@@ -85,7 +85,8 @@
     font-size: 1.2em;
 
   }
-  .cards {
+  .cards,
+  .details {
     display: block;
   }
 
@@ -189,7 +190,8 @@
   nav {
     height: 60px;
   }
-  .card {
+  .card, 
+  .detail {
 
     flex: 0 1 calc(50% - 1em);
 
