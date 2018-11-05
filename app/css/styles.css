@@ -147,7 +147,7 @@ nav {
 .panel {
   height: 90vh;
   background-repeat: repeat;
-  background-position:center;
+  background-position: center;
   background-attachment: fixed;
   background-size: 60%;
   justify-content: center;

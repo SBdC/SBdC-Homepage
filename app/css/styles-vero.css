@@ -245,6 +245,7 @@ ul {
 body {
     background:linear-gradient( rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('../images/new/pattern-navy.jpg') repeat fixed;
     background-size: 100%;
+
 }
 
 /*header*/
@@ -276,8 +277,6 @@ body {
 .wrap {
     display: flex;
     flex-wrap: wrap;
-
-
 }
 
 .one {
@@ -286,6 +285,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-content: flex-start;
+    z-index:3;
 
 }
 
@@ -295,6 +295,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-content: flex-end;
+    z-index:3;
 }
 
 
@@ -304,6 +305,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    z-index:3;
 }
 
 .box {
@@ -377,51 +379,6 @@ body {
 }
 
 
-/*.middle {
-    background-color: var(--offwhite);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    width: 5%;
-    height: 40px;
-    order: 0;
-    display: flex;
-    align-self: center;
-    z-index: -1;
-
-}
-
-.bottomMiddle {
-    background-color: var(--offwhite);
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-    width: 12%;
-    height: 40px;
-    order: 1;
-    display: flex;
-    align-self: center;
-    z-index: -1;
-
-}
-
-.bottomMiddle2 {
-    background-color: var(--offwhite);
-    width: 19%;
-    height: 60px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-    order: 2;
-    display: flex;
-    align-self: center;
-    z-index: -1;
-
-}
-*/
-
-.cloud {
-   
-    margin-top: -50px;
-    background-color: lightgrey;
-}
 
 
 
@@ -433,27 +390,28 @@ body {
 
 nav {
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 1em;
     position: fixed;
-
+    background:black;
+    z-index: 2;
+  
 }
 
 .navTitle {
     font-size: 1.8em;
     font-family: 'Merriweather', serif;
-    /*position: absolute;
-    left: calc(50% - 2.8em);*/
+   
     text-transform: uppercase;
     display:flex;
     justify-content: center;
-    padding:40px 10px 0px 10px;
+   
    
     
 }
 
 ul {
-    margin-top: 20px;
+    margin-top: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -509,7 +467,6 @@ li:hover {
     margin-top: 80px;
     left: 0%;
     text-transform: capitalize;
-
     font-size: 1.2em;
 }
 
@@ -532,7 +489,6 @@ li:hover {
     display: flex;
     align-items: center;
     letter-spacing: 2px;
-   
     font-family: 'Merriweather', serif;
     color: var(--azulao);
     margin-bottom: 10px;
@@ -598,10 +554,16 @@ h2.products {
 
 .centered {
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 30px;
     background-color: lightgrey;
+ 
+
 }
 
+
+.thumbnail{
+    max-height:250px;
+}
 
 .cards {
     margin: 150px;
@@ -719,23 +681,33 @@ h2.products {
 .detail-section{
     display:flex;
     justify-content:center;
+    margin-top: -105px;
+    margin-bottom: 100px;
+
+
+}
+
+.caption-title{
+    font-weight: 800;
 }
 
 
 .detail-container {
 
-    max-width: 90%;
+    max-width: 80%;
     margin: 0;
     overflow: hidden;
     background-color: var(--offwhite);
     border: 5px solid black;
 }
-
 .detail-images {
 
-    margin: 20px;
+    padding:1em;
+    margin: 0 auto;
 
 }
+
+
 
 .caption {
     display: flex;
@@ -744,7 +716,7 @@ h2.products {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    padding: 10px;
+    padding: 2em;
     line-height: 15px;
     font-size: 1em;
 }
@@ -757,22 +729,19 @@ h2.products {
 
 
 .details {
-    margin-left: 40px;
+    margin:0 2em;
+    padding:0;
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
 }
 
 
 .detail {
-  
     display: flex;
-    justify-content: space-around;
-    align-content: center;
     flex: 0 1 calc(33% - 0.5em);
-    margin: 0em ;
     padding: 0;
 }
 
@@ -781,9 +750,35 @@ h2.products {
     border: 5px solid black;
 }
 
+.close{
+  position:absolute;
+  font-size: 2.5em;
+  padding:0;
+  top:-9px;
+  left: 5px;
+ 
+}
+
+.close-wrapper:hover{
+    transform: rotate(360deg);
+    transform-origin: center center;
+    transition: 1s;
+    cursor:pointer;
 
 
+}
 
+.close-wrapper{
+    position:absolute;
+    left:85%;
+    background-color:lightgrey;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top:10px;
+    z-index: 1;
+    
+}
 
 
 
