@@ -79,7 +79,54 @@ const details = [{
     size: '160cm x 38cm',
     production: 'Portugal'
   },
-
+   {type: "bag",
+    name: "circle-bag",
+    sourceDetail: "Detail-Bag-Narciso-e-Eco-bege_1x",
+    sourceDetail2: "Detail-Bag-Narciso-e-Eco-bege_2x",
+    sourceModel: "Model-Bag-Narciso-e-Eco-circle_1x",
+    sourceModel2: "Model-Bag-Narciso-e-Eco-circle_2x",
+    sourceProduct: "Bag-Narciso-e-Eco-circle-navy_1x",
+    sourceProduct2: "Bag-Narciso-e-Eco-circle-navy_2x",
+    material: '100% Organic Cotton and 100% Cotton Moleskin  ',
+    size: '42cm x 36cm x 6cm',
+    production: 'Poland'
+  },
+   {type: "bag",
+    name: "still-bag",
+    sourceDetail: "Detail-Pillow-Narciso-e-Eco-bege_1x",
+    sourceDetail2: "Detail-Pillow-Narciso-e-Eco-bege_2x",
+    sourceModel: "Model-Bag-Narciso-e-Eco-still_1x",
+    sourceModel2: "Model-Bag-Narciso-e-Eco-still_2x",
+    sourceProduct: "Pillow-Narciso-e-Eco-still-navy_1x",
+    sourceProduct2: "Pillow-Narciso-e-Eco-still-navy_2x",
+    material: '100% Organic Cotton and 100% Cotton Moleskin  ',
+    size: '42cm x 36cm x 6cm',
+    production: 'Poland'
+  },
+   {type: "pillow",
+    name: "still-pillow",
+    sourceDetail: "Detail-Pillow-Narciso-e-Eco-bege_1x",
+    sourceDetail2: "Detail-Pillow-Narciso-e-Eco-bege_2x",
+    sourceModel: "Model-Pillow-Narciso-e-Eco-still_1x",
+    sourceModel2: "Model-Pillow-Narciso-e-Eco-still_2x",
+    sourceProduct: "Pillow-Narciso-e-Eco-still-navy_1x",
+    sourceProduct2: "Pillow-Narciso-e-Eco-still-navy_2x",
+    material: '100% Organic Cotton',
+    size: '46cm x 46cm ',
+    production: 'Poland'
+  },
+   {type: "pillow",
+    name: "circle-pillow",
+    sourceDetail: "Detail-Bag-Narciso-e-Eco-bege_1x",
+    sourceDetail2: "Detail-Bag-Narciso-e-Eco-bege_2x",
+    sourceModel: "Model-Pillow-Narciso-e-Eco-circle_1x",
+    sourceModel2: "Model-Pillow-Narciso-e-Eco-circle_2x",
+    sourceProduct: "Bag-Narciso-e-Eco-circle-navy_1x",
+    sourceProduct2: "Bag-Narciso-e-Eco-circle-navy_2x",
+    material: '100% Organic Cotton and 100% Cotton Moleskin  ',
+    size: '42cm x 36cm x 6cm',
+    production: 'Poland'
+  }
 ];
 
 
@@ -88,6 +135,10 @@ const panels = document.querySelectorAll(".panel");
 
 const echarpe = document.getElementById('echarpe');
 const foillard = document.getElementById('foillard');
+const bag = document.getElementById('bag');
+const pillow = document.getElementById('pillow');
+
+
 const cardContent = document.getElementById('card-content');
 
 const headingsTwos = document.querySelectorAll(".heartbeat");
@@ -96,6 +147,12 @@ const cardWraps = document.querySelectorAll(".cardwrap");
 
 const cards = document.querySelectorAll(".card");
 
+const zIndexs = document.querySelectorAll(".zIndex");
+
+
+
+
+let clicks = 0;
 
 function toggleOpen(e) {
 
@@ -103,7 +160,8 @@ function toggleOpen(e) {
   emptyDetail();
 
   let typeEl = e.target.getAttribute("data-type");
-
+  clicks += 1;
+  console.log(clicks);
 
   for (let detail in details) {
 
@@ -223,19 +281,55 @@ function lightsOff(e){
 }
 
 
-function emptyDetail(){
+function emptyDetail(e){
+
+  let clicks = 0;
 
   echarpe.innerHTML = '';
   foillard.innerHTML = '';
+  bag.innerHTML = '';
+  pillow.innerHTML = '';
 
   cardWraps.forEach(cardWrap => cardWrap.classList.remove("border"));
+
 }
+
+const wrap= document.getElementById("wrap");
+
+function changeZindex(){
+
+   let one = document.getElementById('one');
+   let two = document.getElementById('two');
+  
+   one.style.zIndex = "1";
+   two.style.zIndex = "1";
+  
+  
+}
+
+function changeZindexBack(){
+ 
+     
+   let one = document.getElementById('one');
+   let two = document.getElementById('two');
+
+   one.style.zIndex = "3";
+   two.style.zIndex = "3";
+   
+  
+}
+
+
+
 
 
 headingsTwos.forEach(headingTwo => headingTwo.addEventListener("mouseover", lightsOn, false));
 headingsTwos.forEach(headingTwo => headingTwo.addEventListener("mouseout", lightsOff, false));
 cards.forEach(card => card.addEventListener('click',toggleOpen, false));
 
+wrap.addEventListener("mouseover", changeZindex, false);
+
+wrap.addEventListener("mouseout", changeZindexBack, false);
 
 
 

@@ -1,4 +1,4 @@
-@media screen and  (max-width: 649px) {
+@media screen and  (max-width: 681px) {
 
    .logo {
     margin-top: 120px ;
@@ -66,9 +66,9 @@
 
   }
   .title h1 {
-    margin-bottom: 140px;
+    
     font-size: 1.5em;
-    position: absolute;
+    position: relative;
     padding:0;
 
   }
@@ -81,15 +81,17 @@
   }
 
   .titleSection {
-    margin-top: 60px;
+    margin-top: 80px;
     font-size: 1.2em;
 
   }
-  .cards,
-  .details {
-    display: block;
-  }
+   .card, 
+  .detail {
 
+    display:block;
+    min-width: 250px;
+
+  }
 
   .about {
     height: 420px;
@@ -125,7 +127,7 @@
   }
 }
 
-@media screen and (min-width: 650px) and (max-width:1110px) {
+@media screen and (min-width: 682px) and (max-width:1110px) {
   .left {
     width: 25%;
   }
@@ -151,15 +153,15 @@
 
   }
 .vero {
-    transform: scale(1.4);
-
+    transform: scale(1.3);
+      right: -40px;
 
 
   }
 
 .sara {
-    transform: scale(1.4);
-      left: -90px;
+    transform: scale(1.3);
+      left: -100px;
 
   }
 
@@ -176,14 +178,11 @@
 
 
 
-  h1 {
+  .title h1 {
     font-size: 2em;
-    margin-top: -15px;
-    margin-right: 15px;
+    
   }
-  h3 {
-
-  }
+  
   li a {
     font-size: 1.5em;
   }

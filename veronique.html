@@ -42,25 +42,37 @@
             </g>
         </symbol>
     </svg>
+
+
+  
+
   <header class="present">
-    <!-- navigation -->
-    <nav class="navigation" id="nav">
-      <ul>
-        <li class="bounce-in-top"><a href="#story">Story</a></li>
-        <li class="bounce-in-top3"><a href="#echarpes">Products</a></li>
-        <li class="bounce-in-top"><a href="#shop">Store</a></li>
-        <li class="bounce-in-top2"><a href="#shop">Play</a></li>
-      </ul>
-    </nav>
-
-
 
 
 
 
     <!-- css illustration for header -->
-    <div class="wrap">
-      <div class="wrapper one">
+    <div id="wrap" class="wrap">
+
+
+    <!-- navigation -->
+    <nav class="navigation" id="nav">
+      <ul>
+        <li class="bounce-in-top"><a href="#story">Story</a></li>
+        <a href="#products"><li class=" dropdown bounce-in-top3">Products
+          <div class="dropdown-content">
+            <a href="#echarpes-section">Echarpes</a>
+            <a href="#foillards-section">Foillards</a>
+            <a href="#bags-section">Bags</a>
+            <a href="#pillow-section">Pillows</a>
+          </div>
+        </li></a>
+        <li class="bounce-in-top"><a href="#store">Store</a></li>
+        <li class="bounce-in-top2"><a href="#https://www.sarabentodecastro.com/memorygame">Play</a></li>
+      </ul>
+    </nav>
+
+      <div id="one" class="wrapper one">
         <figure class="logo sara">
           <a href="#footer">
              <svg >
@@ -72,7 +84,7 @@
         <div class="box bottomLeft slide-right"></div>
         <div class="box bottomLeft2 slide-right"></div>
       </div>
-      <div class="wrapper two">
+      <div id="two" class="wrapper two">
         <figure class="logo vero">
           <svg>
           <use xlink:href="#logo-veronique"></use>
@@ -84,15 +96,14 @@
       </div>
 
     </div>
-<div class="titleWrapper">
+        <div class="titleWrapper">
       <div class="title">
       <h1>ECO &amp; NARCISO</h1>
       <h5>Exclusive collection featuring an original print</h5>
-      <h5> A collaboration between a boutique and a designer.</h5>
+      <h5> A collaboration between a boutique and a designer</h5>
      
     </div>
 </div>  
-
 
 
   </header>
@@ -101,7 +112,7 @@
 
   <main class="centered">
 
-       <h2 class="navTitle"> Products</h2>
+       <div id="products" class="navTitle"> </div>
 
        <!--  <h2 class="products">Products</h3> -->
 <!-- Echarpes SECTiON -->
@@ -114,13 +125,13 @@
       </div>
       <div class=drop2></div>
     </div>
-    <h2 class="titleSection"> Echarpes</h2>
+    <h2 id="echarpe-title" class="titleSection"> Echarpes</h2>
 
     </div>
 
 <!-- cards -->
 
-    <section class="cards">
+    <section id="echarpes-section" class="cards">
 
     <article class="card">
         <div class="cardwrap">
@@ -181,7 +192,7 @@
     </div>
 
 <!-- Cards -->
-    <section  class="cards ">
+    <section  id="foillards-section" class="cards ">
 
 
         </article>
@@ -238,18 +249,18 @@
             </div>
             <div class=drop2></div>
           </div>
-          <h2 class="titleSection"> Bags</h2>
+          <h2 id="bag-title" class="titleSection"> Tote-Bags</h2>
 
           </div>
     <!-- Cards -->
-    <section  class="cards ">
+    <section id="bags-section" class="cards ">
 
 
         </article>
         <article class="card">
           <div class="cardwrap">
             <picture class="thumbnail">
-              <img data-type="bag" id="circle-bag" src="app/images/new/thumb-Narciso-e-Eco-sq-navy_1x.jpg" srcset="app/images/new/thumb-Narciso-e-Eco-sq-navy_2x.jpg 2x, app/images/sq/thumb-Narciso-e-Eco-ret-navy_1x.jpg 1x" alt="narciso eco scarf square">
+              <img data-type="bag" id="circle-bag" src="app/images/new/thumb-Narciso-e-Eco-bag-circle_1x.jpg" srcset="app/images/new/thumb-Narciso-e-Eco-bag-circle_2x.jpg 2x, app/images/sq/thumb-Narciso-e-Eco-bag-circle_1x.jpg 1x" alt="narciso eco tote bag circle">
             </picture>
             <div class="card-content">
               <h2>Tote Bag Circle 01 </h2>
@@ -261,7 +272,7 @@
       <article class="card">
       <div class="cardwrap">
       <div class="thumbnail">
-        <img data-type="bag" id="circle-bag" src="app/images/new/thumb-Narciso-e-Eco-sq-green_1x.jpg" srcset="app/images/new/thumb-Narciso-e-Eco-sq-green_2x.jpg 2x, app/images/sq/thumb-Narciso-e-Eco-ret-green_1x.jpg 1x" alt="narciso eco scarf square">
+        <img data-type="bag" id="still-bag" src="app/images/new/thumb-Narciso-e-Eco-bag-still_1x.jpg" srcset="app/images/new/thumb-Narciso-e-Eco-bag-still_2x.jpg 2x, app/images/sq/thumb-Narciso-e-Eco-bag-still_1x.jpg 1x" alt="narciso eco tote bag still">
       </div>
       <div class="card-content">
         <h2>Tote Bag Still 01 </h2>
@@ -270,22 +281,68 @@
       </div>
     </article>
 
-    
-
-
     </section>
     <!-- product detail -->
     <article class="detail-section" id="bag"> </article>
 
 
-    <article class="about" id="about">
+
+
+      <!-- Pillows SECTiON -->
+
+      <!-- Title drop -->
+      <div class="drop-wrapper">
+
+          <div class="bounce-in-top">
+            <div class="drop">
+            </div>
+            <div class=drop2></div>
+          </div>
+          <h2 id="pillow-title" class="titleSection"> Pillows</h2>
+
+          </div>
+    <!-- Cards -->
+    <section id="pillow-section" class="cards ">
+
+
+        </article>
+        <article class="card">
+          <div class="cardwrap">
+            <picture class="thumbnail">
+              <img data-type="pillow" id="circle-pillow" src="app/images/new/thumb-Narciso-e-Eco-pilllow-circle_1x.jpg" srcset="app/images/new/thumb-Narciso-e-Eco-pillow-circle_2x.jpg 2x, app/images/sq/thumb-Narciso-e-Eco-pillow-circle_1x.jpg 1x" alt="narciso eco pillow circle">
+            </picture>
+            <div class="card-content">
+              <h2>Pillow Circle 01 </h2>
+         
+            </div>
+          </div>
+        </article>
+
+      <article class="card">
+      <div class="cardwrap">
+      <div class="thumbnail">
+        <img data-type="pillow" id="still-pillow" src="app/images/new/thumb-Narciso-e-Eco-pillow-still_1x.jpg" srcset="app/images/new/thumb-Narciso-e-Eco-pillow-still_2x.jpg 2x, app/images/sq/thumb-Narciso-e-Eco-pillow-still_1x.jpg 1x" alt="narciso eco pillow still">
+      </div>
+      <div class="card-content">
+        <h2>Pillow Still 01 </h2>
+  
+      </div>
+      </div>
+    </article>
+
+    </section>
+    <!-- product detail -->
+    <article class="detail-section" id="pillow"> </article>
+
+
+    <article class="about" id="story">
       <h2>Story</h2>
       <p> This limited edition collection features an open interpretation of the greek myths Narciso and Eco.</p>
       <p>When the nymph Eco sets her eyes on Narciso, she immediately falls in love. Narciso though has only eyes for himself and upon seeing is own reflection on the water, he drowns. </p>
       <p>From sorrow, Eco transforms herself into the forest, all bones turned to stone. So it is told in varous ways in the greek mythology. </p>
       <p> In this one of kind print, the myth gets revisited once again, Eco is to be found everywhere and Narciso is lost in his vanity</p>
     </article>
-    <article class="about about-vero" id="veroboutique">
+    <article class="about about-vero" id="store">
       <h2>Shop and Contacts</h2>
       <p>This collection is exclusively sold at Veronique Boutique</p>
       <p>Travessa do Carmo 1</p>
