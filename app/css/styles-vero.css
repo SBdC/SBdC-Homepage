@@ -225,6 +225,8 @@ ul {
     box-sizing: inherit;
 }
 
+
+
 /*colors*/
 
 :root {
@@ -243,12 +245,14 @@ ul {
 }
 
 body {
-    background:linear-gradient( rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('../images/new/pattern-navy.jpg') repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/new/pattern-navy.jpg') repeat fixed;
     background-size: 100%;
 
 }
 
 /*header*/
+
+
 
 .sara {
     fill: black;
@@ -269,7 +273,9 @@ body {
 
 }
 
-
+.present {
+    padding-bottom: 2em;
+}
 
 
 /*css illustration top*/
@@ -287,8 +293,8 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-content: flex-start;
-        z-index:3;
- 
+    z-index: 3;
+
 
 }
 
@@ -298,8 +304,8 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-content: flex-end;
-        z-index:3;
-   
+    z-index: 3;
+
 }
 
 
@@ -388,24 +394,12 @@ nav {
     width: 100%;
     padding: 1em;
     position: fixed;
-    background:black;
+    background: black;
     z-index: 2;
 
-  
+
 }
 
-.navTitle {
-    font-size: 1.8em;
-    font-family: 'Merriweather', serif;
-   
-    text-transform: uppercase;
-    display:flex;
-    justify-content: center;
-  
-
-   
-    
-}
 
 ul {
     margin-top: 0px;
@@ -413,11 +407,11 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-   
+
 }
 
 li a {
-    z-index:5;
+    z-index: 5;
     font-size: 1.2em;
     text-transform: uppercase;
     padding: 0em 1em 0em 1em;
@@ -425,7 +419,7 @@ li a {
     color: var(--green);
     font-weight: 800;
     font-family: 'Open Sans', sans-serif;
-  
+
 }
 
 li:hover {
@@ -434,27 +428,27 @@ li:hover {
 }
 
 
- .dropdown-content{
-    margin-top:0em;
+.dropdown-content {
+    margin-top: 0em;
     display: none;
     color: black;
     position: absolute;
     background-color: black;
     left: -18px;
     min-width: 140px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 4;
     cursor: pointer;
-    padding:1em;
+    padding: 1em;
 }
 
-.dropdown-content a{
+.dropdown-content a {
     color: var(--green);
     font-size: 1.2em;
     padding-bottom: 1em;
     text-decoration: none;
     display: block;
-     z-index: 4;
+    z-index: 4;
 }
 
 
@@ -462,7 +456,9 @@ li:hover {
     color: var(--coral);
 }
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 
 
@@ -470,7 +466,15 @@ li:hover {
 .drop-wrapper {
     position: relative;
     left: 5%;
+    top: 2em;
 }
+
+
+.drop-echarpe {
+
+    top: 8em;
+}
+
 
 
 .drop {
@@ -499,29 +503,33 @@ li:hover {
     transform-origin: center;
     position: absolute;
     margin: 80px 0px;
-    margin-left:2px;
-    padding:0;
+    margin-left: 2px;
+    padding: 0;
     text-transform: capitalize;
     font-size: 1.2em;
-    color:var(--azul);
+    color: black;
 }
 
-
-#bag-title{
-   margin-left:-4px;
+#pillow-title {
+    margin-left: 10px;
 }
-#echarpe-title{
-   margin-left:-1px;
+
+#bag-title {
+    margin-left: -4px;
+}
+
+#echarpe-title {
+    margin-left: -1px;
 }
 
 /*general text style*/
 .titleWrapper {
 
-    height: 25vh;
+
     text-align: center;
     display: block;
-    position:relative;
-   
+    position: relative;
+
 
 }
 
@@ -599,23 +607,30 @@ h2.products {
 
 .centered {
     margin: 0 auto;
-    padding-top: 30px;
     background-color: lightgrey;
- 
+    padding-top: 0.2em;
 
 }
 
 
-.thumbnail{
-    max-height:250px;
+.thumbnail {
+    max-height: 250px;
 }
 
+.thumbnail:hover {
+    cursor:pointer;
+}
 .cardwrap:hover {
     box-shadow: 3px 3px 8px hsl(0, 0%, 50%);
 }
 
+.echarpes-top {
+    padding-top: 1em;
+}
+
 .cards {
-    margin: 150px;
+    margin: 7em;
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -623,13 +638,13 @@ h2.products {
 }
 
 .card {
-  
+
     display: flex;
     justify-content: space-around;
     align-content: center;
     flex: 0 1 calc(33% - 0.5em);
     margin: 0em 0em 1em 0em;
-    padding: 0;
+
 }
 
 /* .card:hover {
@@ -648,19 +663,10 @@ h2.products {
     font-weight: normal;
     font-size: 1.2em;
     text-transform: uppercase;
+    text-align: center;
 }
 
-.card-content p {
-    font-size: 85%;
-}
 
-.card.open {
-    flex: 5
-}
-
-.thumbnail:hover {
-    cursor: pointer;
-}
 
 
 /*about*/
@@ -678,7 +684,7 @@ h2.products {
     height: 400px;
     line-height: 1em;
     margin-top: -25px;
-    padding:20px;
+    padding: 20px;
 }
 
 .contact {
@@ -686,7 +692,7 @@ h2.products {
 }
 
 .about-vero {
-  background-color: lightgrey;
+    background-color: lightgrey;
     height: 500px;
     padding-bottom: 30px;
 }
@@ -728,20 +734,28 @@ h2.products {
  * accordion
  * ---------------------------------------------- */
 
-.detail-section{
-    display:flex;
-    justify-content:center;
+.detail-section {
+    display: flex;
+    justify-content: center;
     margin-top: -105px;
     margin-bottom: 100px;
 
 
 }
 
-.caption-title{
+.caption-title {
 
     font-weight: 800;
+    padding-left: 20px;
 }
 
+
+.caption-wrapper{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
 
 .detail-container {
 
@@ -751,9 +765,10 @@ h2.products {
     background-color: white;
     box-shadow: 5px 3px 8px hsl(0, 0%, 60%);
 }
+
 .detail-images {
 
-    padding:1em;
+    padding: 1em;
     margin: 0 auto;
 
 }
@@ -767,21 +782,23 @@ h2.products {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    padding: 2em ;
+    padding: 2em 5em;
     line-height: 15px;
     font-size: 1em;
+    text-align: center;
 }
 
-.caption>p {
-    margin-right: 10px;
+.caption > p {
+ 
+    line-height: 25px;
 }
 
 
 
 
 .details {
-    margin:0 2em;
-    padding:0;
+    margin: 0 2em;
+    padding: 0;
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -799,40 +816,40 @@ h2.products {
 
 .border {
     box-shadow: 3px 3px 8px hsl(0, 0%, 50%);
-  
+
 }
 
 
 
-.close{
-  position:absolute;
-  font-size: 2.5em;
-  padding:0;
-  top:-9px;
-  left: 5px;
- 
+.close {
+    position: absolute;
+    font-size: 2.5em;
+    padding: 0;
+    top: -9px;
+    left: 5px;
+
 }
 
-.close-wrapper:hover{
+.close-wrapper:hover {
     transform: rotate(360deg);
     transform-origin: center center;
     transition: 1s;
-    cursor:pointer;
+    cursor: pointer;
 
 
 }
 
-.close-wrapper{
-    position:relative;
-    left:95%;
-    background-color:lightgrey;
+.close-wrapper {
+    position: relative;
+    left: 92%;
+    background-color: lightgrey;
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    margin-top:20px;
+    margin-top: 20px;
     margin: 1.5em 0 0 0;
     z-index: 1;
-    
+
 }
 
 

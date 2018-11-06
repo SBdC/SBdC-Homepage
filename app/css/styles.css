@@ -149,7 +149,7 @@ nav {
   background-repeat: repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: 60%;
+  background-size: 50%;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -161,7 +161,6 @@ nav {
   display:flex;
   margin:0;
   width: 100%;
-
   flex: 1 0 auto;
 
 

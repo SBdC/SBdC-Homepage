@@ -1,207 +1,255 @@
-@media screen and  (max-width: 681px) {
+@media screen and (max-width: 681px) {
 
-   .logo {
-    margin-top: 120px ;
-
-  }
-.vero {
-    transform: scale(1.4);
-     height: 440px;
-  }
-
-.sara {
-    transform: scale(1.4);
-    top:20px;
-  }
-
-  #Lisbon-Boutique{
-    display:none;
-  }
-
-
-#Sara-Bento-de-Castro{
-    display:none;
-  }
-
-  .wrapper {
-    margin-top: 30px;
-    margin-bottom: 60px;
-
-  }
-  .left {
-    width: 20%;
-
-  }
-  .bottomLeft {
-    width: 50%;
-  }
-  .bottomLeft2 {
-    width: 80%;
-  }
-  .right {
-    width: 20%;
-  }
-  .bottomRight {
-    width: 50%;
-  }
-  .bottomRight2 {
-    width: 80%;
-  }
-  .title {
- margin:20px;
-
-  }
-  .about h2 {
-    font-size: 1.5em;
-
-  }
-  li a {
-    font-size: 0.8em;
-    margin-top: -60px;
-  }
-  nav {
-
-    margin-bottom: 130px;
-    background-color: black;
-
-  }
-  .title h1 {
-    
-    font-size: 1.5em;
-    position: relative;
-    padding:0;
-
-  }
-   .title h3 {
-    text-align: center;
-    font-size: 0.8em;
-    margin:0 auto;
-
-
-  }
-
-  .titleSection {
-    margin-top: 80px;
-    font-size: 1.2em;
-
-  }
-   .card, 
-  .detail {
-
-    display:block;
-    min-width: 250px;
-
-  }
-
-  .about {
-    height: 420px;
-
-  }
-
-  .about p {
-    line-height: 1.5em;
-    padding: 0px 15px 0px 15px;
-    font-size: 0.8em;
-
-
-      margin-right: 40px;
-      margin-left: 40px;
-
-  }
-  .about h2 {
-
-    padding-bottom: 40px;
-
-  }
-
-
-
-  .card-content {
-    text-align: center;
-  }
-  .card-content h2 {
-    font-size: 1em;
-  }
-  .card-content p {
-    font-size: 0.8em;
-  }
-}
-
-@media screen and (min-width: 682px) and (max-width:1110px) {
-  .left {
-    width: 25%;
-  }
-  .bottomLeft {
-    width: 40%;
-  }
-  .bottomLeft2 {
-    width: 55%;
-  }
-
-  .right {
-    width: 25%;
-  }
-  .bottomRight {
-    width: 40%;
-  }
-  .bottomRight2 {
-    width: 55%;
-  }
-
-  .logo {
-    margin-top: 35px ;
-
-  }
-.vero {
-    transform: scale(1.3);
-      right: -40px;
-
-
-  }
-
-.sara {
-    transform: scale(1.3);
-      left: -100px;
-
-  }
-
-  #Lisbon-Boutique{
-    display:none;
-  }
-
-
-#Sara-Bento-de-Castro{
-    display:none;
-  }
-
-
-
-
-
-  .title h1 {
-    font-size: 2em;
-    
-  }
-  
-  li a {
-    font-size: 1.5em;
-  }
-  nav {
-    height: 60px;
-  }
-  .card, 
-  .detail {
-
-    flex: 0 1 calc(50% - 1em);
-
-  }
-
-    .about {
-      height: 500px;
+    .logo {
+        margin-top: 120px;
 
     }
 
-  #copyright p {
-    padding-left: 20px;
-  }
+    .vero {
+        transform: scale(1.1);
+        right: -40px;
+        top: 0px;
+
+    }
+
+    .sara {
+        transform: scale(1.1);
+        left: -120px;
+        top: -23px;
+
+    }
+
+    #Lisbon-Boutique {
+        display: none;
+    }
+
+
+    #Sara-Bento-de-Castro {
+        display: none;
+    }
+
+    .wrapper {
+        margin-top: 30px;
+        margin-bottom: 60px;
+
+    }
+
+    .left {
+         display:none;
+
+    }
+
+    .bottomLeft {
+        width: 50%;
+    }
+
+    .bottomLeft2 {
+        width: 80%;
+    }
+
+    .right {
+        display:none;
+    }
+
+    .bottomRight {
+        width: 50%;
+    }
+
+    .bottomRight2 {
+        width: 80%;
+    }
+
+    .title {
+        margin: 20px;
+
+    }
+
+    .about h2 {
+        font-size: 1.5em;
+
+    }
+
+    li a {
+        font-size: 0.8em;
+        margin-top: -60px;
+    }
+
+    nav {
+
+        background-color: black;
+
+    }
+    .title{
+      padding: 0;
+      margin:0;
+    }
+
+
+    .title h1 {
+
+        font-size: 1.5em;
+        position: relative;
+        padding: 0;
+
+    }
+
+    .title h5 {
+        text-align: center;
+        font-size: 0.5em;
+        margin: 0 auto;
+
+
+    }
+
+    .titleSection {
+        margin-top: 80px;
+        font-size: 1.2em;
+
+    }
+
+    .card,
+    .detail {
+
+        display: block;
+        min-width: 250px;
+
+    }
+
+    .about {
+        height: 420px;
+
+    }
+
+    .about p {
+        line-height: 1.5em;
+        padding: 0px 15px 0px 15px;
+        font-size: 0.8em;
+
+
+        margin-right: 40px;
+        margin-left: 40px;
+
+    }
+
+    .about h2 {
+
+        padding-bottom: 40px;
+
+    }
+
+
+
+    .card-content {
+        text-align: center;
+    }
+
+    .card-content h2 {
+        font-size: 1em;
+    }
+
+    .card-content p {
+        font-size: 0.8em;
+    }
+
+    .close-wrapper {
+  
+    left: 85%;
+
+}
+
+}
+
+@media screen and (min-width: 682px) and (max-width:1110px) {
+
+
+
+    .left {
+        width: 25%;
+    }
+
+    .bottomLeft {
+        width: 40%;
+    }
+
+    .bottomLeft2 {
+        width: 55%;
+    }
+
+    .right {
+        width: 25%;
+    }
+
+    .bottomRight {
+        width: 40%;
+    }
+
+    .bottomRight2 {
+        width: 55%;
+    }
+
+    .logo {
+        margin-top: 35px;
+
+    }
+
+    .vero {
+        transform: scale(1.3);
+        right: -40px;
+
+
+    }
+
+    .sara {
+        transform: scale(1.3);
+        left: -100px;
+
+    }
+
+    #Lisbon-Boutique {
+        display: none;
+    }
+
+
+    #Sara-Bento-de-Castro {
+        display: none;
+    }
+
+
+
+    .title h1 {
+        font-size: 2em;
+
+    }
+     .title h5 {
+        text-align: center;
+        font-size: 0.7em;
+        margin: 0 auto;
+
+
+    }
+
+    li a {
+        font-size: 1.3em;
+    }
+
+    nav {
+        height: 40px;
+        padding: 0.5em;
+    }
+
+    .card,
+    .detail {
+
+        flex: 0 1 calc(50% - 1em);
+
+    }
+
+    .about {
+        height: 500px;
+
+    }
+
+    #copyright p {
+        padding-left: 20px;
+    }
 }
