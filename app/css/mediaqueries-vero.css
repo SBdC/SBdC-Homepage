@@ -6,15 +6,15 @@
     }
 
     .vero {
-        transform: scale(1.1);
-        right: -40px;
+        transform: scale(1);
+        right: -85px;
         top: 0px;
 
     }
 
     .sara {
-        transform: scale(1.1);
-        left: -120px;
+        transform: scale(1);
+        left: -130px;
         top: -23px;
 
     }
@@ -40,7 +40,7 @@
     }
 
     .bottomLeft {
-        width: 50%;
+        width: 40%;
     }
 
     .bottomLeft2 {
@@ -52,7 +52,7 @@
     }
 
     .bottomRight {
-        width: 50%;
+        width: 40%;
     }
 
     .bottomRight2 {
@@ -70,18 +70,19 @@
     }
 
     li a {
-        font-size: 0.8em;
-        margin-top: -60px;
+        font-size: 0.7em;
+
     }
 
     nav {
 
         background-color: black;
+        z-index:4;
 
     }
     .title{
       padding: 0;
-      margin:0;
+      margin-top:-50px;
     }
 
 
@@ -152,16 +153,23 @@
     }
 
     .close-wrapper {
-  
+
     left: 85%;
 
 }
+
+.dropdown-content a{
+   font-size:  0.7em;
+}
+
 
 }
 
 @media screen and (min-width: 682px) and (max-width:1110px) {
 
-
+  .dropdown-content a{
+     font-size:  1.3em;
+  }
 
     .left {
         width: 25%;
