@@ -1,5 +1,4 @@
-html
-{
+html {
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -9,23 +8,20 @@ html
 
 *,
 *:before,
-*:after
-{
+*:after {
     box-sizing: inherit;
 }
 
-body
-{
+body {
     display: flex;
     flex-direction: column;
-    background-color:black;
+    background-color: black;
     margin: 0 auto;
 }
 
 
 
-h2
-{
+h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 4em;
     font-weight: 700;
@@ -36,8 +32,7 @@ h2
 }
 
 
-h3
-{
+h3 {
     font-family: 'Merriweather', Georgia, serif;
     font-size: 1em;
     font-weight: 300;
@@ -51,8 +46,7 @@ h3
 }
 
 
-h4
-{
+h4 {
     font-family: 'Open Sans', sans-serif;
     font-size: .8em;
     font-weight: 300;
@@ -65,8 +59,7 @@ h4
     color: lightgrey;
 }
 
-.arrowDown
-{
+.arrowDown {
     font-size: 6em;
 
     position: absolute;
@@ -77,21 +70,18 @@ h4
 }
 
 
-a
-{
+a {
     cursor: pointer;
     text-decoration: none;
 }
 
-p
-{
+p {
     font-size: .8em;
 
     padding-right: 1em;
 }
 
-.content-wrap
-{
+.content-wrap {
     display: flex;
     flex-direction: column;
 
@@ -101,8 +91,7 @@ p
     align-items: flex-end;
 }
 
-.collaboration-box
-{
+.collaboration-box {
     display: flex;
     flex-direction: column;
 
@@ -117,22 +106,19 @@ p
 -------------------------*/
 
 header,
-footer
-{
+footer {
     background: #2b2d42;
 }
 
 /* header */
 
-header
-{
+header {
     position: relative;
 }
 
 /* footer */
 
-footer
-{
+footer {
     font-family: 'Merriweather', serif;
 
     text-align: center;
@@ -142,46 +128,42 @@ footer
     background-size: 20%;
 }
 
-.content-wrap-contact
-{
-    display:flex;
+.content-wrap-contact {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
 
     height: 280px;
-    
+
 }
 
 
-.contact-info a
-{
+.contact-info a {
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
     font-weight: 700;
     color: #9db4d5;
     background-color: white;
-    padding:5px;
-   
+    padding: 5px;
+
 
 }
 
-.contact-info a:hover
-{
+.contact-info a:hover {
     color: black;
 }
 
-.contact-info{
-    
-    width:400px;
+.contact-info {
+
+    width: 400px;
 
 }
 
 /* Navigation
 -------------------------*/
 
-nav
-{
+nav {
     top: 0;
 
     width: 100%;
@@ -190,15 +172,13 @@ nav
     background-color: black;
 }
 
-nav h4
-{
+nav h4 {
     padding: 2em;
 
     text-align: center;
 }
 
-.logo
-{
+.logo {
     position: absolute;
 
     width: 20%;
@@ -208,8 +188,7 @@ nav h4
 
 /* Main
 -------------------------*/
-.goToPage
-{
+.goToPage {
     margin-right: 10px;
     padding: 10px;
 
@@ -217,16 +196,14 @@ nav h4
     background-color: #9db4d5;
 }
 
-.goToPage:hover
-{
+.goToPage:hover {
     cursor: pointer;
 
     background-color: whitesmoke;
 }
 
 
-.panel
-{
+.panel {
     display: flex;
     flex-direction: column;
 
@@ -241,8 +218,7 @@ nav h4
 }
 
 
-.panel > *
-{
+.panel>* {
     display: flex;
 
     width: 100%;
@@ -251,8 +227,7 @@ nav h4
     flex: 1 0 auto;
 }
 
-.panels
-{
+.panels {
     display: flex;
     overflow: hidden;
     flex-direction: column;
@@ -261,32 +236,28 @@ nav h4
 /* vero
 -------------------------*/
 
-.veronique
-{
+.veronique {
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url(../images/veronique.jpg);
 }
 
 /* franzius
 -------------------------*/
 
-.franzius
-{
+.franzius {
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url(../images/franzius.jpg);
 }
 
 /* wolfen
 -------------------------*/
 
-.wolfen
-{
+.wolfen {
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url(../images/wolfen.jpg);
 }
 
 /* linda
 -------------------------*/
 
-.linda
-{
+.linda {
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), linear-gradient(rgba(141, 153, 174, .3), rgba(141, 153, 174, 0)), url(../images/linda-gris-neutre.jpg);
 }
 
@@ -294,41 +265,34 @@ nav h4
 /* grisneutre 01
 -------------------------*/
 
-.gris1
-{
+.gris1 {
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url(../images/grisneutre001.jpg);
 }
 
 /* grisneutre 02
 -------------------------*/
 
-.gris2
-{
+.gris2 {
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url(../images/grisneutre002.jpg);
 }
 
 /* Media Queries
 -------------------------*/
-@media only screen (min-width: 767px) and (max-width: 1110px)
-{
-    h2
-    {
+@media only screen (min-width: 767px) and (max-width: 1110px) {
+    h2 {
         font-size: 3em;
     }
 
-    h3
-    {
+    h3 {
         font-size: .8em;
         line-height: 12px;
     }
 
-    nav
-    {
+    nav {
         height: 70px;
     }
 
-    .content-wrap
-    {
+    .content-wrap {
         padding-top: 300px;
         padding-right: 50px;
         align-items: flex-end;
@@ -339,38 +303,31 @@ nav h4
 
 
 
-@media only screen  (min-width: 615px) and (max-width: 768px)
-{
-    .logo
-    {
+@media only screen (min-width: 615px) and (max-width: 768px) {
+    .logo {
         width: 30%;
         margin-top: 120px;
         margin-left: 120px;
     }
 
-    nav
-    {
+    nav {
         height: 80px;
     }
 
-    h2
-    {
+    h2 {
         font-size: 3em;
     }
 
-    h3
-    {
+    h3 {
         font-size: .8em;
         line-height: 12px;
     }
 
-    p
-    {
+    p {
         font-size: .6em;
     }
 
-    .content-wrap
-    {
+    .content-wrap {
         padding-top: 300px;
         padding-right: 0;
 
@@ -380,47 +337,41 @@ nav h4
 
 
 
-@media only screen and (max-width: 616px)
-{
-    .logo
-    {
+@media only screen and (max-width: 616px) {
+    .logo {
         width: 40%;
         margin-top: 90px;
         margin-left: 40px;
     }
 
-    nav
-    {
+    nav {
         height: 90px;
         font-size: 0.8em;
         padding: 0 10px;
     }
 
-    h2
-    {
+    h2 {
         font-size: 1.5em;
     }
 
-    h3
-    {
+    h3 {
         font-size: 0.5em;
         line-height: 2px;
     }
 
-    p{
+    p {
         font-size: .6em;
         margin-top: 10px;
     }
 
-    .content-wrap
-    {
+    .content-wrap {
         padding: 0;
         justify-content: center;
         align-items: flex-end;
     }
 
-    .contact-info a{
-      font-size: 1em;
+    .contact-info a {
+        font-size: 1em;
     }
 
 
@@ -433,25 +384,21 @@ nav h4
  */
 
 
-.heartbeat
-{
+.heartbeat {
     -webkit-animation: heartbeat 2s ease-in-out infinite both;
-            animation: heartbeat 2s ease-in-out infinite both;
+    animation: heartbeat 2s ease-in-out infinite both;
 }
 
 
-.scrollDown
-{
+.scrollDown {
     -webkit-animation: scrollDown 2s ease-in-out infinite both;
-            animation: scrollDown 2s ease-in-out infinite both;
+    animation: scrollDown 2s ease-in-out infinite both;
 }
 
 
 
-@keyframes scrollDown
-{
-    100%
-    {
+@keyframes scrollDown {
+    100% {
         transform: translateY(800px);
     }
 }
@@ -462,92 +409,80 @@ nav h4
  * ---------------------------------------------- */
 
 
-@-webkit-keyframes heartbeat
-{
-    from
-    {
+@-webkit-keyframes heartbeat {
+    from {
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         -webkit-transform-origin: center center;
-                transform-origin: center center;
+        transform-origin: center center;
         -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
 
-    10%
-    {
+    10% {
         -webkit-transform: scale(.91);
-                transform: scale(.91);
+        transform: scale(.91);
         -webkit-animation-timing-function: ease-in;
-                animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
     }
 
-    17%
-    {
+    17% {
         -webkit-transform: scale(.98);
-                transform: scale(.98);
+        transform: scale(.98);
         -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
 
-    33%
-    {
+    33% {
         -webkit-transform: scale(.87);
-                transform: scale(.87);
+        transform: scale(.87);
         -webkit-animation-timing-function: ease-in;
-                animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
     }
 
-    45%
-    {
+    45% {
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
 }
 
-@keyframes heartbeat
-{
-    from
-    {
+@keyframes heartbeat {
+    from {
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         -webkit-transform-origin: center center;
-                transform-origin: center center;
+        transform-origin: center center;
         -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
 
-    10%
-    {
+    10% {
         -webkit-transform: scale(.91);
-                transform: scale(.91);
+        transform: scale(.91);
         -webkit-animation-timing-function: ease-in;
-                animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
     }
 
-    17%
-    {
+    17% {
         -webkit-transform: scale(.98);
-                transform: scale(.98);
+        transform: scale(.98);
         -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
 
-    33%
-    {
+    33% {
         -webkit-transform: scale(.87);
-                transform: scale(.87);
+        transform: scale(.87);
         -webkit-animation-timing-function: ease-in;
-                animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
     }
 
-    45%
-    {
+    45% {
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
         -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
 }
