@@ -9,12 +9,14 @@ CSS Reset
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
-    overflow-x: hidden;
 }
 
-body {
-    margin: 0;
+
+
+html, body{
+  overflow-x: hidden;
 }
+
 
 article,
 aside,
@@ -247,7 +249,7 @@ ul {
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../images/new/pattern-navy.jpg') repeat fixed;
     background-size: 100%;
-
+    position: relative;
 }
 
 /*header*/
@@ -392,7 +394,8 @@ body {
 
 nav {
     width: 100%;
-    padding: 1em;
+    padding: 0em;
+    height: 40px;
     position: fixed;
     background: black;
     z-index: 2;
@@ -402,7 +405,7 @@ nav {
 
 
 ul {
-    margin-top: 0px;
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -551,7 +554,7 @@ li:hover {
 
     font-size: 0.9em;
     line-height: 20px;
-    color: lightgrey;
+    color: var(--offwhite);
     line-height: 2;
     padding: 0;
     margin: 0;
@@ -680,10 +683,10 @@ h2.products {
 .about {
     background-color: var(--azul);
     text-align: center;
-    min-height: 400px;
+    min-height: 500px;
     line-height: 1em;
 
-    padding: 0px;
+    padding-bottom: 20px;
 }
 
 .contact {
@@ -692,8 +695,8 @@ h2.products {
 
 .about-vero {
     background-color: lightgrey;
-    height: 500px;
-    padding-bottom: 30px;
+    
+   
 }
 
 .about h2 {
@@ -745,7 +748,8 @@ h2.products {
 .caption-title {
 
     font-weight: 800;
-    padding-left: 20px;
+    padding-left: 10px;
+     padding-right: 10px;
 }
 
 
@@ -789,7 +793,7 @@ h2.products {
 
 .caption > p {
 
-    line-height: 25px;
+    line-height: 20px;
 }
 
 
@@ -829,10 +833,10 @@ h2.products {
 
 }
 
-.close-wrapper:hover {
+.close:hover {
     transform: rotate(360deg);
     transform-origin: center center;
-    transition: 1s;
+    transition:500ms;
     cursor: pointer;
 
 
@@ -841,11 +845,6 @@ h2.products {
 .close-wrapper {
     position: relative;
     left: 92%;
-    background-color: lightgrey;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    margin-top: 20px;
     margin: 1.5em 0 0 0;
     z-index: 1;
 

@@ -4,21 +4,6 @@ html
     overflow-x: hidden;
 }
 
-body:before {
-  content: "";
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  background: url(photos/2452.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 
 
@@ -33,7 +18,7 @@ body
 {
     display: flex;
     flex-direction: column;
-
+    background-color:black;
     margin: 0 auto;
 }
 
@@ -159,12 +144,13 @@ footer
 
 .content-wrap-contact
 {
-    display: flex;
+    display:flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 
-    height: 180px;
-
-    justify-content: flex-end;
+    height: 280px;
+    
 }
 
 
@@ -173,17 +159,22 @@ footer
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
     font-weight: 700;
-
-    margin: 2em;
-    padding: 1em;
-
     color: #9db4d5;
     background-color: white;
+    padding:5px;
+   
+
 }
 
 .contact-info a:hover
 {
     color: black;
+}
+
+.contact-info{
+    
+    width:400px;
+
 }
 
 /* Navigation

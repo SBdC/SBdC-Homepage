@@ -1,5 +1,5 @@
 @media screen and (max-width: 681px) {
-
+   
     .logo {
         margin-top: 120px;
 
@@ -65,7 +65,7 @@
     }
 
     .about h2 {
-        font-size: 1.5em;
+        font-size: 1.2em;
 
     }
 
@@ -138,6 +138,16 @@
 
     }
 
+   .drop-wrapper{
+    transform:scale(0.8);
+    left:-5%;
+    top:-22px;
+   }
+
+     .drop-echarpe{
+    
+    top:80px;
+   }
 
 
     .card-content {
@@ -154,7 +164,7 @@
 
     .close-wrapper {
 
-    left: 85%;
+    left: 80%;
 
 }
 
@@ -162,6 +172,14 @@
    font-size:  0.7em;
 }
 
+.caption p{
+    font-size: 0.8em;
+
+}
+
+.caption{
+    padding:30px;
+}
 
 }
 
@@ -232,8 +250,7 @@
         text-align: center;
         font-size: 0.7em;
         margin: 0 auto;
-
-
+       
     }
 
     li a {
@@ -245,10 +262,12 @@
         padding: 0.5em;
     }
 
+   
+
     .card,
     .detail {
 
-        flex: 0 1 calc(50% - 1em);
+        flex: 0 1 calc(50% );
 
     }
 
