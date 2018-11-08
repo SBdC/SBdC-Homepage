@@ -1,5 +1,5 @@
 @media screen and (max-width: 681px) {
-   
+
     .logo {
         margin-top: 120px;
 
@@ -117,26 +117,22 @@
     }
 
     .about {
-        min-height: 520px;
+        min-height: 420px;
+        display:block;
+        padding:30px 30px;
+        margin:0;
+
 
     }
 
     .about p {
         line-height: 1.5em;
-        padding: 0px 15px 0px 15px;
         font-size: 0.8em;
-
-
-        margin-right: 40px;
-        margin-left: 40px;
+        padding:0px 0px;
+        margin:0;
 
     }
 
-    .about h2 {
-
-        padding-bottom: 40px;
-
-    }
 
    .drop-wrapper{
     transform:scale(0.8);
@@ -145,7 +141,7 @@
    }
 
      .drop-echarpe{
-    
+
     top:80px;
    }
 
@@ -250,7 +246,7 @@
         text-align: center;
         font-size: 0.7em;
         margin: 0 auto;
-       
+
     }
 
     li a {
@@ -262,7 +258,7 @@
         padding: 0.5em;
     }
 
-   
+
 
     .card,
     .detail {
@@ -272,9 +268,22 @@
     }
 
     .about {
-        min-height: 540px;
+        min-height: 420px;
+        display:block;
+        padding:30px 30px;
+        margin:0;
+
 
     }
+
+    .about p {
+        line-height: 1.5em;
+        font-size: 1em;
+        padding:0px 0px;
+        margin:0;
+
+    }
+
 
     #copyright p {
         padding-left: 20px;

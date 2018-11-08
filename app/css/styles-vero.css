@@ -265,6 +265,10 @@ body {
     position: absolute;
 }
 
+.sara:hover{
+  fill: var(--blue);
+}
+
 .vero {
     fill: black;
     top: 109px;
@@ -682,8 +686,7 @@ h2.products {
     text-align: center;
     min-height: 500px;
     line-height: 1em;
-
-    padding-bottom: 20px;
+    padding:40px 100px;
 }
 
 .contact {
@@ -692,13 +695,13 @@ h2.products {
 
 .about-vero {
     background-color: lightgrey;
-    
-   
+
+
 }
 
 .about h2 {
     font-family: 'Open Sans', sans-serif;
-    padding-top: 45px;
+
     padding-bottom: 25px;
     font-size: 1.8em;
     font-weight: 800;
