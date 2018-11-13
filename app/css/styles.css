@@ -237,28 +237,28 @@ nav h4 {
 -------------------------*/
 
 .veronique {
-    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url(../images/veronique.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/veronique.jpg);
 }
 
 /* franzius
 -------------------------*/
 
 .franzius {
-    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url(../images/franzius.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/franzius.jpg);
 }
 
 /* wolfen
 -------------------------*/
 
 .wolfen {
-    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url(../images/wolfen.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/wolfen.jpg);
 }
 
 /* linda
 -------------------------*/
 
 .linda {
-    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), linear-gradient(rgba(141, 153, 174, .3), rgba(141, 153, 174, 0)), url(../images/linda-gris-neutre.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),  url(../images/linda-gris-neutre.jpg);
 }
 
 
@@ -266,14 +266,14 @@ nav h4 {
 -------------------------*/
 
 .gris1 {
-    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url(../images/grisneutre001.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/grisneutre001.jpg);
 }
 
 /* grisneutre 02
 -------------------------*/
 
 .gris2 {
-    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1)), url(../images/grisneutre002.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/grisneutre002.jpg);
 }
 
 /* Media Queries

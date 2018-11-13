@@ -47,9 +47,9 @@ function lightsOff(e) {
             colBox.style.backgroundColor="black";
 
             let panelo = document.getElementById(panels[panel].id)
-            panelo.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(app/images/${panels[panel].id}.jpg) `;
+            panelo.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(app/images/${panels[panel].id}.jpg) `;
             panelo.style.backgroundSize = "50%";
-
+            console.log("hey")
             hoverElTarget.classList.toggle("heartbeat");
 
         }
